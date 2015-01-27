@@ -882,6 +882,14 @@ main {
     background-color: #fff;
 }
 
+#mc_embed_signup{
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;    
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* ==========================================================================
    5. Media Queries - Smaller than 900px

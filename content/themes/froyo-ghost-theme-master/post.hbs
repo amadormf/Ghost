@@ -38,25 +38,8 @@
                 </section>
                 <p class="post-tags"><i class="fa fa-tags"></i> {{tags separator=", "}}</p>
             </div>
-            <section class="post-author">
-                <div class="inner">
-                    <div class="author-image-container col-aside">
-                        <img src="{{author.image}}" class="author-image" />
-                    </div>
-                    <div class="author-info">
-                        <h4>{{author.name}}</h4>
-                        <p>{{author.bio}}</p>
-                    </div>
-                </div>
-                <span class="clearfix"></span>
-            </section>
             <!-- Begin MailChimp Signup Form -->
             <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
             <div id="mc_embed_signup">
             <form action="//amadormateo.us10.list-manage.com/subscribe/post?u=aa3bdc24fb751a251b396f9bf&amp;id=78b1ed2ff9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
@@ -104,6 +87,18 @@
             <div class="inner">
                 <div id="disqus_thread" data-disqus-shortname="amadormateocom" data-disqus-identifier="{{id}}"></div>
             </div>
+            <section class="post-author">
+                <div class="inner">
+                    <div class="author-image-container col-aside">
+                        <img src="{{author.image}}" class="author-image" />
+                    </div>
+                    <div class="author-info">
+                        <h4>{{author.name}}</h4>
+                        <p>{{author.bio}}</p>
+                    </div>
+                </div>
+                <span class="clearfix"></span>
+            </section>            
         {{/post}}      
     </article>
 
