@@ -526,7 +526,7 @@ main {
     color: #fff;
     text-align: center;
     position: fixed;
-    z-index: -1;
+    z-index: 0;
 }
 
 .home-template h1.blog-title {
