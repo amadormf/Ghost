@@ -524,9 +524,7 @@ main {
     top: 0;
     background-size: cover;
     color: #fff;
-    text-align: center;
-    position: fixed;
-    z-index: 0;
+    text-align: center;    
 }
 
 .home-template h1.blog-title {
