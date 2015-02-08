@@ -673,7 +673,17 @@ var _              = require('lodash'),
                         params: '--init'
                     }
                 }
-            }
+            },
+            cssmin: {
+              target: {
+                files: {
+                  'output.css': ['./content/themes/froyo-ghost-theme-master/assets/css/zocial.css',
+                                 './content/themes/froyo-ghost-theme-master/assets/css/font-awesome.min.css',
+                                 './content/themes/froyo-ghost-theme-master/assets/css/screen.css']
+                }
+              }
+            }            
+
         };
 
         // Load the configuration
@@ -1143,6 +1153,8 @@ var _              = require('lodash'),
             ' - Clean out unnecessary files (travis, .git*, etc)\n' +
             ' - Zip files in release-folder to dist-folder/#{version} directory',
             ['init', 'concat:prod', 'copy:prod', 'emberBuildProd', 'uglify:release', 'clean:release', 'copy:release', 'compress:release']);
+
+        grunt.registerTask('mini', 'css min', ['cssmin']);
     };
 
 // Export the configuration
